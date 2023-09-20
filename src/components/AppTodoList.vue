@@ -5,6 +5,7 @@
       :key="todo.id"
       :todo="todo"
       @toggle-todo="toggleTodo"
+      @remove-todo="removeTodo"
       />
   </ul>
 </template>
@@ -40,6 +41,10 @@ export default defineComponent({
       if(targetTodo) {
         targetTodo.completed = !targetTodo.completed
       }
+    },
+    removeTodo(id: number) {
+      // Новый массив будет состоять из элементов, чей id не совпадает с id аргумента
+      this.todos = this.todos.filter((todo: Todo) => todo.id !== id)
     }
   }
 })

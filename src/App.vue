@@ -4,7 +4,7 @@
 
   <main class="app-main">
     <AppTodoList />
-    <AppAddTodo />
+    <AppAddTodo @add-todo="addTodo"/>
   </main>
 
   <AppFooter />
@@ -17,6 +17,7 @@ import AppFilters from "./components/AppFilters.vue"
 import AppTodoList from "./components/AppTodoList.vue"
 import AppAddTodo from "./components/AppAddTodo.vue"
 import AppFooter from "./components/AppFooter.vue"
+import { Todo } from "./types/Todo"
 
 export default defineComponent({
   components: {
@@ -26,5 +27,10 @@ export default defineComponent({
     AppAddTodo,
     AppFooter
   },
-});
+  methods: {
+    addTodo(todo: Todo) {
+      console.log(todo)
+    }
+  }
+})
 </script>
