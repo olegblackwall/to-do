@@ -1,24 +1,6 @@
-# to-do
+# to-do Vue.js App
+Моё первое приложение, разработанное в рамках обучения Vue.js и TypeScript.
 
-## Project setup
-```
-npm install
-```
+## О приложении
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Это небольшое приложение для управления задачами (To-Do List), разработанное с использованием фреймворка Vue.js и языка TypeScript.Проект был создан в учебных целях, чтобы изучить особенности работы с Vue.js, включая пропсы, емиты и использование интерфейсов для типизации данных.
